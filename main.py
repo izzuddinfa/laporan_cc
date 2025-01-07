@@ -13,7 +13,7 @@ formatted_timestamp = timestamp.astimezone(wib_timezone).strftime("%Y-%m-%d_%H-%
 
 base_url = 'https://portaldata.kemenhub.go.id/api/siasati'
 base_filename = 'laporan_pusintrans_0'
-formatted_timestamp = timestamp.strftime("%Y-%m-%d_%H-%M-%S")
+
 for id in range(1,7):
     filename = f'{base_filename}{id}'
     url = f'{base_url}/{filename}?&format=json'
