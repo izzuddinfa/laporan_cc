@@ -28,18 +28,18 @@ jobs:
           pip install -r requirements.txt  # Install dependencies dari file requirements.txt (jika ada)
 
       - name: Run the Python script to get Data
-        run: python main.py  # Jalankan file Python yang menghasilkan pickle
+        run: python main.py  # Jalankan file Python
 
-      - name: Create output folder and move pickle file
+      - name: Create output folder and move file
         run: |
           mkdir -p output  # Membuat folder output jika belum ada
           mv *.csv output/
 
-      - name: Commit and push pickle files to repository
+      - name: Commit and push files to repository
         run: |
           git config --global user.name "izzuddinfa"
           git config --global user.email "izzuddinfathin@gmail.com"
           git remote set-url origin https://github.com/${{ github.repository }}.git
-          git add output/*.parquet  # Menambahkan semua file pickle di folder output
+          git add output/*.csv  # Menambahkan semua file pickle di folder output
           git commit -m "add new data"  # Commit perubahan
           git push https://izzuddinfa:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
