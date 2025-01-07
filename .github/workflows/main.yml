@@ -8,15 +8,17 @@ on:
   push:
     branches:
       - main  # Jalankan ketika ada push ke branch main
+
 permissions:
   contents: write
+
 jobs:
   get_data_strategi:
     runs-on: ubuntu-22.04  # Menjalankan di mesin Ubuntu
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2  # Checkout kode dari repository
+        uses: actions/checkout@v3  # Menggunakan versi terbaru checkout
 
       - name: Set up Python 3.12.1
         uses: actions/setup-python@v2
@@ -35,11 +37,43 @@ jobs:
           mkdir -p output  # Membuat folder output jika belum ada
           mv *.csv output/
 
+      - name: Delete old files (Older Than 3 Days)
+        run: |
+          # Set timezone to Asia/Jakarta (WIB)
+          sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+          # Get current time in WIB and calculate cutoff time (3 days ago)
+          current_time=$(date +'%Y-%m-%d_%H-%M-%S')
+          cutoff_time=$(date -d "$current_time -3 days" +'%Y-%m-%d_%H-%M-%S')
+          echo "Current time: $current_time"
+          echo "Cutoff time: $cutoff_time"
+
+          # Convert cutoff time to epoch
+          cutoff_time_epoch=$(date -d "$cutoff_time" +%s)
+          
+          # Iterate through files in the output folder
+          for file in output/*; do
+            filename=$(basename "$file")
+            
+            # Extract timestamp from the filename (before first underscore '_')
+            file_time=$(echo "$filename" | grep -oE "^[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{2}-[0-9]{2}-[0-9]{2}")
+            
+            if [ -n "$file_time" ]; then
+              # Convert extracted timestamp to epoch
+              file_time_epoch=$(date -d "$file_time" +%s)
+              
+              # Compare file timestamp with cutoff time
+              if [ "$file_time_epoch" -lt "$cutoff_time_epoch" ]; then
+                echo "Deleting $file"
+                rm "$file"
+              fi
+            fi
+          done
+
       - name: Commit and push files to repository
         run: |
           git config --global user.name "izzuddinfa"
           git config --global user.email "izzuddinfathin@gmail.com"
           git remote set-url origin https://github.com/${{ github.repository }}.git
-          git add output/*.csv  # Menambahkan semua file pickle di folder output
-          git commit -m "add new data"  # Commit perubahan
+          git add -A output/  # Menambahkan semua perubahan termasuk penghapusan file
+          git commit -m "Add new data and cleanup old files" || echo "No changes to commit"  # Commit perubahan
           git push https://izzuddinfa:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
