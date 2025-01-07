@@ -18,4 +18,4 @@ for id in range(1,7):
     filename = f'{base_filename}{id}'
     url = f'{base_url}/{filename}?&format=json'
     response = requests.get(url).json()
-    pd.DataFrame(response).to_parquet(f'{formatted_timestamp}_{filename}.parquet', engine='pyarrow')
+    pd.DataFrame(response).to_csv(f'{formatted_timestamp}_{filename}.csv')
