@@ -33,7 +33,7 @@ jobs:
       - name: Create output folder and move pickle file
         run: |
           mkdir -p output  # Membuat folder output jika belum ada
-          mv *.parquet output/
+          mv *.csv output/
 
       - name: Commit and push pickle files to repository
         run: |
