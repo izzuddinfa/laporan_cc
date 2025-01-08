@@ -1,0 +1,27 @@
+tipe,kategori,jenis,nilai
+mobilitas_sarana_non_simpul,LAPOR,Pantauan Jalan Arteri ATCS,33
+mobilitas_sarana_non_simpul,SARANA,Pantauan Jalan Arteri ATCS,5878
+angkutan_penumpang,PENUMPANG,Angkutan Jalan,3441
+angkutan_penumpang,PENUMPANG,Angkutan Penyeberangan,85
+angkutan_penumpang,PENUMPANG,Angkutan Laut,3607
+angkutan_penumpang,PENUMPANG,Angkutan Perkeretaapian,68646
+angkutan_penumpang,SARANA,Angkutan Jalan,212
+angkutan_penumpang,SARANA,Angkutan Penyeberangan,5
+angkutan_penumpang,SARANA,Angkutan Laut,116
+angkutan_penumpang,SARANA,Angkutan Perkeretaapian,309
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 2,6
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 4 atau Lebih,24
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 4,16
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Bus,0
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Truk,8
+angkutan_kendaraan_sdp,SARANA,Trip,5
+mobilitas_sarana,LAPOR,Angkutan Jalan,18
+mobilitas_sarana,LAPOR,Jalan Arteri,33
+mobilitas_sarana,LAPOR,Angkutan Penyeberangan,3
+mobilitas_sarana,LAPOR,Angkutan Laut,71
+mobilitas_sarana,LAPOR,Angkutan Perkeretaapian,322
+mobilitas_sarana,SARANA,Angkutan Jalan,212
+mobilitas_sarana,SARANA,Jalan Arteri,5878
+mobilitas_sarana,SARANA,Angkutan Penyeberangan,5
+mobilitas_sarana,SARANA,Angkutan Laut,116
+mobilitas_sarana,SARANA,Angkutan Perkeretaapian,309
