@@ -1,0 +1,12 @@
+id,metode,jenis,jumlah_laporan
+1,MANUAL,Terminal Tipe A,97
+2,MANUAL,Terminal Tipe B,12
+3,MANUAL,Terminal Tipe C,2
+4,MANUAL,Pelabuhan Penyeberangan,0
+5,MANUAL,Pelabuhan Pembantu,0
+6,API,Gerbang & Jalan Tol,39
+7,API,Jalan Arteri,93
+8,API,Pelabuhan Penyeberangan,38
+9,API,Angkutan Laut,229
+10,API,Angkutan Udara,12
+11,API,Perkeretaapian,361
