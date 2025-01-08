@@ -1,0 +1,27 @@
+tipe,kategori,jenis,nilai
+mobilitas_sarana_non_simpul,LAPOR,Gerbang Toll Jasa Marga,2
+mobilitas_sarana_non_simpul,SARANA,Gerbang Toll Jasa Marga,8161
+angkutan_penumpang,PENUMPANG,Angkutan Jalan,9223
+angkutan_penumpang,PENUMPANG,Angkutan Penyeberangan,14205
+angkutan_penumpang,PENUMPANG,Angkutan Laut,2741
+angkutan_penumpang,PENUMPANG,Angkutan Perkeretaapian,69653
+angkutan_penumpang,SARANA,Angkutan Jalan,901
+angkutan_penumpang,SARANA,Angkutan Penyeberangan,126
+angkutan_penumpang,SARANA,Angkutan Laut,120
+angkutan_penumpang,SARANA,Angkutan Perkeretaapian,309
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 2,499
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 4 atau Lebih,3344
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 4,1568
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Bus,216
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Truk,1560
+angkutan_kendaraan_sdp,SARANA,Trip,126
+mobilitas_sarana,LAPOR,Angkutan Jalan,44
+mobilitas_sarana,LAPOR,Jalan Tol,2
+mobilitas_sarana,LAPOR,Angkutan Penyeberangan,13
+mobilitas_sarana,LAPOR,Angkutan Laut,71
+mobilitas_sarana,LAPOR,Angkutan Perkeretaapian,322
+mobilitas_sarana,SARANA,Angkutan Jalan,901
+mobilitas_sarana,SARANA,Jalan Tol,8161
+mobilitas_sarana,SARANA,Angkutan Penyeberangan,126
+mobilitas_sarana,SARANA,Angkutan Laut,120
+mobilitas_sarana,SARANA,Angkutan Perkeretaapian,309
