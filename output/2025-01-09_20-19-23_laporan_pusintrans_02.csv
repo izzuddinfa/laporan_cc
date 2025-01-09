@@ -1,0 +1,37 @@
+tipe,kategori,jenis,nilai
+mobilitas_sarana_non_simpul,LAPOR,Pantauan Jalan Arteri ATCS,34
+mobilitas_sarana_non_simpul,LAPOR,Pantauan Jalan Arteri ATMS,58
+mobilitas_sarana_non_simpul,LAPOR,Gerbang Toll Jasa Marga,42
+mobilitas_sarana_non_simpul,SARANA,Pantauan Jalan Arteri ATCS,1116596
+mobilitas_sarana_non_simpul,SARANA,Pantauan Jalan Arteri ATMS,810430
+mobilitas_sarana_non_simpul,SARANA,Gerbang Toll Jasa Marga,937424
+angkutan_penumpang,PENUMPANG,Angkutan Jalan,98234
+angkutan_penumpang,PENUMPANG,Angkutan Penyeberangan,61244
+angkutan_penumpang,PENUMPANG,Angkutan Laut,1734
+angkutan_penumpang,PENUMPANG,Angkutan Udara,899
+angkutan_penumpang,PENUMPANG,Angkutan Perkeretaapian,26687
+angkutan_penumpang,SARANA,Angkutan Jalan,8861
+angkutan_penumpang,SARANA,Angkutan Penyeberangan,705
+angkutan_penumpang,SARANA,Angkutan Laut,34
+angkutan_penumpang,SARANA,Angkutan Udara,16
+angkutan_penumpang,SARANA,Angkutan Perkeretaapian,379
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 2,5468
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 4 atau Lebih,12987
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Roda 4,5919
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Bus,643
+angkutan_kendaraan_sdp,KENDARAAN-SDP,Truk,6425
+angkutan_kendaraan_sdp,SARANA,Trip,705
+mobilitas_sarana,LAPOR,Angkutan Jalan,112
+mobilitas_sarana,LAPOR,Jalan Arteri,92
+mobilitas_sarana,LAPOR,Jalan Tol,42
+mobilitas_sarana,LAPOR,Angkutan Penyeberangan,38
+mobilitas_sarana,LAPOR,Angkutan Laut,35
+mobilitas_sarana,LAPOR,Angkutan Udara,8
+mobilitas_sarana,LAPOR,Angkutan Perkeretaapian,355
+mobilitas_sarana,SARANA,Angkutan Jalan,8861
+mobilitas_sarana,SARANA,Jalan Arteri,1927026
+mobilitas_sarana,SARANA,Jalan Tol,937424
+mobilitas_sarana,SARANA,Angkutan Penyeberangan,705
+mobilitas_sarana,SARANA,Angkutan Laut,34
+mobilitas_sarana,SARANA,Angkutan Udara,16
+mobilitas_sarana,SARANA,Angkutan Perkeretaapian,379
