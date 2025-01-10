@@ -1,0 +1,14 @@
+id,metode,jenis,jumlah_laporan
+1,MANUAL,Terminal Tipe A,69
+2,MANUAL,Terminal Tipe B,6
+3,MANUAL,Terminal Tipe C,2
+4,MANUAL,Pelabuhan Penyeberangan ASDP,0
+5,MANUAL,Pelabuhan Penyeberangan NON ASDP,0
+6,MANUAL,Pelabuhan Pembantu,0
+7,API,Gerbang & Jalan Tol,37
+8,API,Jalan Arteri,34
+9,API,Pelabuhan Penyeberangan ASDP,4
+10,API,Pelabuhan Penyeberangan NON ASDP,0
+11,API,Angkutan Laut,113
+12,API,Angkutan Udara,1
+13,API,Perkeretaapian,358
