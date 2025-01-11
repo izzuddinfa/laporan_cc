@@ -1,0 +1,14 @@
+id,metode,jenis,simpul_pantauan,jumlah_laporan,persentase
+1,MANUAL,Terminal Tipe A,128,84,65.63
+2,MANUAL,Terminal Tipe B,90,10,11.11
+3,MANUAL,Terminal Tipe C,108,2,1.85
+4,MANUAL,Pelabuhan Penyeberangan ASDP,0,0,0.00
+5,MANUAL,Pelabuhan Penyeberangan NON ASDP,3,2,66.67
+6,MANUAL,Pelabuhan Pembantu,0,0,0.00
+7,API,Gerbang & Jalan Tol,43,41,95.35
+8,API,Jalan Arteri,94,90,95.74
+9,API,Pelabuhan Penyeberangan ASDP,46,28,60.87
+10,API,Pelabuhan Penyeberangan NON ASDP,34,14,41.18
+11,API,Angkutan Laut,264,149,56.44
+12,API,Angkutan Udara,57,51,89.47
+13,API,Perkeretaapian,453,360,79.47
